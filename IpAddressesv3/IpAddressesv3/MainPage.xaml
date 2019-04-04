@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:IpAddressesv3"
+             x:Class="IpAddressesv3.MainPage">
+
+    <StackLayout Margin="15">
+        <!-- IP Address and prefix -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1" Text="IP" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+            <Entry Grid.Column="0" Placeholder="IP Address" Text="{Binding IpAddress}" TextChanged="Calculate"/>
+            <Label Grid.Column="3" Text="Prefix" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+            <Entry Grid.Column="2" Placeholder="Prefix" Text="{Binding Prefix}" TextChanged="Calculate"/>
+
+        </Grid>
+
+        <!-- TODO: Subnetworks -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry Grid.Column="0" Placeholder="Subs" Text="{Binding SubNetworks}" TextChanged="Calculate"/>
+            <Label Grid.Column="1" Text="Sub Networks" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+            <Entry Grid.Column="2" Placeholder="New Prefix" Text="{Binding NewPrefix}"/>
+            <Label Grid.Column="3" Text="New Prefix" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <!-- IP Address Binary -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Column="0" Placeholder="Binary IP Address" Text="{Binding IpAddressBinary}"/>
+            <Label Grid.Column="1" Text="IP" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <!-- SM Address Binary -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Column="0" Placeholder="Binary Subnetwork Mask" Text="{Binding SMBinary}"/>
+            <Label Grid.Column="1" Text="SM" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <!-- Binary Network Address -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Column="0" Placeholder="Binary Network Address" Text="{Binding NetworkAddressBinary}"/>
+            <Label Grid.Column="1" Text="Network" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <!-- Binary Broadcast Address -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Column="0" Placeholder="Binary Broadcast Address" Text="{Binding BroadcastAddressBinary}"/>
+            <Label Grid.Column="1" Text="Broadcast" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <!-- SM Address -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Column="0" Placeholder="Subnetwork Mask" Text="{Binding SM}"/>
+            <Label Grid.Column="1" Text="SM" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+            <Label Grid.Column="2" Text="{Binding Warning}" TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <!-- Network Address -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Column="0" Placeholder="Network Address" Text="{Binding NetworkAddress}"/>
+            <Label Grid.Column="1" Text="Network" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <!-- Broadcast Address -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Column="0" Placeholder="Broadcast Address" Text="{Binding BroadcastAddress}"/>
+            <Label Grid.Column="1" Text="Broadcast" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <!-- Range of Host Addresses -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Column="0" Placeholder="Range of Host Address" Text="{Binding HostsRange}"/>
+            <Label Grid.Column="1" Text="Range" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <!-- Number of available hosts and Class -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry Grid.Column="0" Placeholder="Hosts" Text="{Binding HostsCount}"/>
+            <Label Grid.Column="1" Text="Hosts" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+            <Entry Grid.Column="2" Placeholder="Class" Text="{Binding NetworkClass}"/>
+            <Label Grid.Column="3" Text="Class" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <!-- Number of available subshosts and Reset button -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry Grid.Column="0" Placeholder="Sub Hosts" Text="{Binding SubHostsCount}"/>
+            <Label Grid.Column="1" Text="Sub Hosts" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+            <Button Grid.Column="2" Text="Reset" Command="{Binding Reset}"/>
+
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>

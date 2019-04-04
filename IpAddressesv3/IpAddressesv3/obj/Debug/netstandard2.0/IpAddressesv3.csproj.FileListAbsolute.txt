@@ -1,0 +1,12 @@
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\bin\Debug\netstandard2.0\IpAddressesv3.deps.json
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\bin\Debug\netstandard2.0\IpAddressesv3.dll
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\bin\Debug\netstandard2.0\IpAddressesv3.pdb
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\obj\Debug\netstandard2.0\IpAddressesv3.csprojAssemblyReference.cache
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\obj\Debug\netstandard2.0\IpAddressesv3.csproj.CoreCompileInputs.cache
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\obj\Debug\netstandard2.0\IpAddressesv3.AssemblyInfoInputs.cache
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\obj\Debug\netstandard2.0\IpAddressesv3.AssemblyInfo.cs
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\obj\Debug\netstandard2.0\IpAddressesv3.dll
+C:\Users\Hijo\source\repos\IpAddressesv3\IpAddressesv3\IpAddressesv3\obj\Debug\netstandard2.0\IpAddressesv3.pdb
