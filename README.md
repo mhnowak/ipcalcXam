@@ -1,2 +1,2 @@
 # ipcalcXam
-Ip Calculator in Xamarin Forms.
+Ip Calculator in Xamarin Forms C#.
